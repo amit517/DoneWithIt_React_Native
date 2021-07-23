@@ -10,20 +10,23 @@ export default function App() {
         backgroundColor: "dodgerblue",
         flex: 1,
         flexDirection: "row",
+        justifyContent: "space-evenly", // main
+        alignItems: "center",
       }}
     >
       <View
         style={{
           backgroundColor: "red",
           width: 100,
-          height: 100,
+          height: 300,
+          alignSelf: "flex-start",
         }}
       />
       <View
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 100,
+          height: 200,
         }}
       />
       <View
