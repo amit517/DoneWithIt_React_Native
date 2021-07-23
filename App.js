@@ -1,16 +1,5 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StyleSheet,
-  TouchableHighlight,
-  Text,
-  View,
-  Image,
-  SafeAreaView,
-  Button,
-  Alert,
-  TouchableNativeFeedbackComponent,
-} from "react-native";
+import { Alert, Button, SafeAreaView, StyleSheet } from "react-native";
 
 export default function App() {
   console.log("App executed");
@@ -18,20 +7,17 @@ export default function App() {
   const handelPress = () => console.log("Text Clicked");
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, backGroundStyle]}>
       <Button
         color="orange"
         title="Click Me"
-        onPress={() =>
-          Alert.alert("My title", "My message", [
-            { text: "Yes", onPress: () => console.log("Yes Pressed") },
-            { text: "No", onPress: () => console.log("No Pressed") },
-          ])
-        }
+        onPress={() => Alert.alert("My Title", "My Message")}
       />
     </SafeAreaView>
   );
 }
+
+const backGroundStyle = { backgroundColor: "white" };
 
 const styles = StyleSheet.create({
   container: {
