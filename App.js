@@ -7,6 +7,9 @@ import {
   View,
   Image,
   SafeAreaView,
+  Button,
+  Alert,
+  TouchableNativeFeedbackComponent,
 } from "react-native";
 
 export default function App() {
@@ -16,21 +19,16 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handelPress}>
-        Hello World - Test testing sentence
-      </Text>
-      <TouchableHighlight onPress={() => console.log("Image Pressed")}>
-        <Image
-          loadingIndicatorSource={true}
-          source={{
-            width: 300,
-            height: 200,
-            uri: "https://picsum.photos/seed/picsum/200/300",
-          }}
-        />
-      </TouchableHighlight>
-
-      <StatusBar style="auto" />
+      <Button
+        color="orange"
+        title="Click Me"
+        onPress={() =>
+          Alert.alert("My title", "My message", [
+            { text: "Yes", onPress: () => console.log("Yes Pressed") },
+            { text: "No", onPress: () => console.log("No Pressed") },
+          ])
+        }
+      />
     </SafeAreaView>
   );
 }
