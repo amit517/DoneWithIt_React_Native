@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View
       style={{
-        backgroundColor: "dodgerblue",
+        backgroundColor: "white",
         flex: 1,
         flexDirection: "row",
         justifyContent: "center", // main
@@ -16,9 +16,9 @@ export default function App() {
     >
       <View
         style={{
-          backgroundColor: "red",
-          flex: -1,
-          width: 400,
+          backgroundColor: "dodgerblue",
+
+          width: 100,
           height: 100,
         }}
       />
@@ -27,6 +27,9 @@ export default function App() {
           backgroundColor: "gold",
           width: 100,
           height: 100,
+          top: 20,
+          left: 20,
+          position: "absolute",
         }}
       />
       <View
