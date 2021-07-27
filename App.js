@@ -1,5 +1,6 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
+import colors from "./app/config/colors";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 
@@ -14,32 +15,22 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <View
+      <Text
         style={{
-          backgroundColor: "dodgerblue",
-          width: 100,
-          height: 100,
-          padding: 20,
-          //paddingHorizontal: 50,
-          paddingLeft: 30,
+          fontSize: 30,
+          // font's are plat from dependent. So need to check the fonts before using
+          fontFamily: "Roboto",
+          fontStyle: "italic",
+          fontWeight: "600", // must be string
+          color: "red",
+          textTransform: "capitalize",
+          textDecorationLine: "line-through",
+          textAlign: "center",
+          lineHeight: 30,
         }}
       >
-        <View
-          style={{
-            backgroundColor: "gold",
-            width: 50,
-            height: 50,
-          }}
-        ></View>
-      </View>
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          marginTop: 10,
-        }}
-      ></View>
+        I love react native, this a is very long text... ha ha haa.. have fun
+      </Text>
     </View>
   );
 }
