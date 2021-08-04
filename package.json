@@ -19,5 +19,19 @@
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "DoneWithIt",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit517/DoneWithIt_React_Native.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amit517/DoneWithIt_React_Native/issues"
+  },
+  "homepage": "https://github.com/amit517/DoneWithIt_React_Native#readme",
+  "description": ""
 }
