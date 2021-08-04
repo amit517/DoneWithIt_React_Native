@@ -10,21 +10,19 @@ function AppText({children}) {
 
 //Platform.select return an object. so we will copy that with our other params
 
-const param =  Platform.select({
-    ios:{
-        fontSize:20,
-        fontFamily:'Avenir'
-    },
-    android:{
-        fontSize:18,
-        fontFamily:'Roboto'
-    }
-})
-
 const styles = StyleSheet.create({
     text:{
         color: 'tomato',
-        ...param,
+        ...Platform.select({
+            ios:{
+                fontSize:20,
+                fontFamily:'Avenir'
+            },
+            android:{
+                fontSize:18,
+                fontFamily:'Roboto'
+            }
+        })
     }
 })
 

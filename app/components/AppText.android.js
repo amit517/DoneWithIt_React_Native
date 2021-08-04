@@ -11,8 +11,8 @@ function AppText({ children }) {
 const styles = StyleSheet.create({
   text: {
     color: "tomato",
-    fontSize: 20,
-    fontFamily: "Avenir",
+    fontSize: 18,
+    fontFamily: "Roboto",
   },
 });
 
